@@ -5,7 +5,7 @@ import {
   calcMinutesLeft,
   formatCurrency,
   formatDate,
-} from "../../../utils/helpers";
+} from "./../../utils/helpers";
 import { getOrder } from "../../services/apiRestaurant";
 
 function Order() {

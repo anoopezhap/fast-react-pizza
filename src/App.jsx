@@ -1,14 +1,14 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import Home from "./../ui/Home";
+import Home from "./../src/ui/Home";
 import Menu, { loader as menuLoader } from "./features/menu/Menu";
 import Cart from "./features/cart/Cart";
 import CreateOrder, {
   action as createOrderAction,
 } from "./features/order/CreateOrder";
 import Order, { loader as orderLoader } from "./features/order/Order";
-import AppLayout from "../ui/AppLayout";
+import AppLayout from "./../src/ui/AppLayout";
 import { Children } from "react";
-import Error from "./../ui/Error";
+import Error from "./../src/ui/Error";
 
 //pass in array of objects
 const router = createBrowserRouter([
