@@ -9,6 +9,7 @@ import Order, { loader as orderLoader } from "./features/order/Order";
 import AppLayout from "./../src/ui/AppLayout";
 import { Children } from "react";
 import Error from "./../src/ui/Error";
+import { action as updateOrderAction } from "./../src/features/order/UpdateOrder";
 
 //pass in array of objects
 const router = createBrowserRouter([
@@ -41,6 +42,7 @@ const router = createBrowserRouter([
         element: <Order />,
         loader: orderLoader,
         errorElement: <Error />,
+        action: updateOrderAction,
       },
     ],
   },
